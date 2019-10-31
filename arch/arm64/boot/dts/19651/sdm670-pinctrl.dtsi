@@ -2959,6 +2959,19 @@
 					bias-disable; /* NO PULL */
 				};
 			};
+			shortc_active: shortc_active {
+				mux {
+					pins = "gpio43";
+					function = "gpio";
+				};
+
+				config {
+					pins = "gpio43";
+					drive-strength = <2>;
+					input-enable;
+					bias-pull-up; /*PULL UP*/
+				};
+			};
 
 
 
